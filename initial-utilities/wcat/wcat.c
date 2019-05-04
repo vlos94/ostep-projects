@@ -11,7 +11,6 @@ int main (int argc, char* argv[argc + 1]) {
       fprintf (stdout, "wcat: cannot open file\n");
       exit (EXIT_FAILURE);
     }
-    
     cat (fp);
     fclose (fp);
   }  
@@ -19,7 +18,6 @@ int main (int argc, char* argv[argc + 1]) {
 }
 
 void cat (FILE* fp) {
-  
   char* buf = NULL;
   size_t len = 0;
   
