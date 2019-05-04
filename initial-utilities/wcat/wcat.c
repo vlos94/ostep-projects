@@ -6,7 +6,6 @@ void cat (FILE* fp);
 int main (int argc, char* argv[argc + 1]) {
   
   for (size_t i = 1; i < argc; ++i) {
-    
     FILE* fp = fopen (argv[i], "r");
     if (!fp) {
       fprintf (stdout, "wcat: cannot open file\n");
