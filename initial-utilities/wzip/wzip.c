@@ -16,7 +16,6 @@ int main (int argc, char* argv[argc + 1]) {
   char* c = malloc (sizeof (char));
   
   for (size_t i = 1; i < argc; ++i) {
-    
     FILE* fp = fopen (argv [i], "r");
     wzip (fp, c, count);
     fclose (fp);
